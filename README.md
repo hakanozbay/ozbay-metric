@@ -6,25 +6,25 @@ The formula produces an output value is which is >= 0.0 where 0.0 is a perfect m
 
 ## Examples
 
-ban, ban = 0.0 
-ban, bane = 0.3333333 
-ban, band = 0.3333333 
-ban, bands = 1.3333333333333335 
-ban, banana = 2.0 
-ban, bandana = 2.3333333333333335 
-ban, bandit = 3.0 
+ban, ban = 0.0  
+ban, bane = 0.3333333  
+ban, band = 0.3333333  
+ban, bands = 1.3333333333333335  
+ban, banana = 2.0  
+ban, bandana = 2.3333333333333335  
+ban, bandit = 3.0  
 ban, bandage = 4.666666666666667 
 
 
 This metric accommodates for words that are incorrectly spelt:
 
-piccadilly, piccadilly = 0.0 
-piccadilyl, piccadilly = 0.25 
-piccadlily, piccadilly = 0.3333333 
-picacdilly, piccadilly = 0.4 
-picadily, piccadilly = 0.5 
-picacdlily, piccadilly = 1.3333333333333335 
-ipcacdily, piccadilly = 1.48148 
+piccadilly, piccadilly = 0.0  
+piccadilyl, piccadilly = 0.25  
+piccadlily, piccadilly = 0.3333333  
+picacdilly, piccadilly = 0.4  
+picadily, piccadilly = 0.5  
+picacdlily, piccadilly = 1.3333333333333335  
+ipcacdily, piccadilly = 1.48148  
 pcicadlyil, piccadilly = 2.0 
 
 
