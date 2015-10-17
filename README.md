@@ -8,8 +8,8 @@ The formula produces an output value is which is >= 0.0 where 0.0 is a perfect m
 
 ban, ban = 0.0  
 ban, bane = 0.3333333  
-ban, band = 0.3333333
-ban, bat = 0.75
+ban, band = 0.3333333  
+ban, bat = 0.75  
 ban, bands = 1.3333333333333335  
 ban, banana = 2.0  
 ban, bandana = 2.3333333333333335  
