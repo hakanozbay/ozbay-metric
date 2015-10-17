@@ -8,7 +8,8 @@ The formula produces an output value is which is >= 0.0 where 0.0 is a perfect m
 
 ban, ban = 0.0  
 ban, bane = 0.3333333  
-ban, band = 0.3333333  
+ban, band = 0.3333333
+ban, bat = 0.75
 ban, bands = 1.3333333333333335  
 ban, banana = 2.0  
 ban, bandana = 2.3333333333333335  
@@ -29,6 +30,13 @@ pcicadlyil, piccadilly = 2.0
 
 
 ## Python implementation
+
+There is a ``` metricRunner.py ``` in the 'python/src' folder of the repository. You can supply 2 words as 2 arguments to the file when executing, for it to then calcualte a result and print it out. Here is an example to illustrate:
+
+```
+$ python3 metricRunner.py ban bat
+The mresult of comparing ban with bat is: 0.75
+```
 
 To execute the tests in the python implementation you need to run the "allTests.py" file in the 'python' folder.
 Before you execute this, you must set the PYTHONPATH to inclue the src folder, like so:
