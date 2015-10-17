@@ -28,7 +28,7 @@ ipcacdily, piccadilly = 1.48148
 pcicadlyil, piccadilly = 2.0 
 
 
-## Python implmentation
+## Python implementation
 
 To execute the tests in the python implementation you need to run the "allTests.py" file in the 'python' folder.
 Before you execute this, you must set the PYTHONPATH to inclue the src folder, like so:
