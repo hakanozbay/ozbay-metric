@@ -35,7 +35,7 @@ There is a ``` metricRunner.py ``` in the 'python/src' folder of the repository.
 
 ```
 $ python3 metricRunner.py ban bat
-The mresult of comparing ban with bat is: 0.75
+The result of comparing ban with bat is: 0.75
 ```
 
 To execute the tests in the python implementation you need to run the "allTests.py" file in the 'python' folder.
