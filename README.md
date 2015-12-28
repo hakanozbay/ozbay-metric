@@ -59,7 +59,7 @@ $ python3 allTests.py
 
 ### Using the library in your code
 
-If you want to use the calculator in your source code as a library, in your source code file you need to import the calculator and utilize it declaring it in 2 possible ways:
+If you want to use the calculator in your source code as a library, You must have a copy of this source code in your project.Then in your source code file you need to import the calculator and utilize it declaring it in 2 possible ways:
 
 ```python
 import ozbayMetricCalculator
