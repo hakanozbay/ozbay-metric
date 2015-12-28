@@ -20,16 +20,17 @@ The formula produces an output value is which is >= 0.0 where 0.0 is a perfect m
 
 This metric accommodates for words that are incorrectly spelt:
 
+
 | Base word | Term word | Ozbay Metric |
 |:---------:|:---------:|:------------:|
 |piccadilly|piccadilly|0.0|
-|piccadilyl|piccadilly|0.25|
-|piccadlily|piccadilly|0.3333333|
-|picacdilly|piccadilly|0.4|
-|picadily|piccadilly|0.5|
-|picacdlily|piccadilly|1.3333333333333335|
-|ipcacdily|piccadilly|1.48148|
-|pcicadlyil|piccadilly|2.0|
+|piccadilly|piccadilyl|0.25|
+|piccadilly|piccadlily|0.3333333|
+|piccadilly|picacdilly|0.4|
+|piccadilly|picadily|0.5|
+|piccadilly|picacdlily|1.3333333333333335|
+|piccadilly|ipcacdily|1.48148|
+|piccadilly|pcicadlyil|2.0|
 
 
 ## Python implementation
