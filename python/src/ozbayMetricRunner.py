@@ -1,5 +1,9 @@
 import argparse
-from metricCalculator import calculate
+from ozbayMetricCalculator import calculate
+
+__author__ = "Hakan Ozbay"
+__maintainer__ = "Hakan Ozbay"
+__version__ = "1.0.0"
 
 def perform_metric_calculation():
 

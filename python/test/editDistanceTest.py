@@ -1,5 +1,5 @@
 import unittest
-from EditDistance import calculate
+from editDistance import calculate
 
 class EditDistanceTest(unittest.TestCase):
 

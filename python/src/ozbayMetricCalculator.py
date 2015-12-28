@@ -1,11 +1,15 @@
-import EditDistance
+import editDistance
 import jaccardDistance
 import longestCommonSubstringDistance
+
+__author__ = "Hakan Ozbay"
+__maintainer__ = "Hakan Ozbay"
+__version__ = "1.0.0"
 
 def calculate(base,term):
 	base = base.lower()
 	term = term.lower()
-	edit_distance = EditDistance.calculate(base,term)
+	edit_distance = editDistance.calculate(base,term)
 	jaccard_distance = jaccardDistance.calculate(base,term)
 	lcss_distance = longestCommonSubstringDistance.calculate(base,term)
 

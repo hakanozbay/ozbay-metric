@@ -1,5 +1,3 @@
-__author__ = 'Hakan'
-
 def calculate(base, term):
         return levenshtein(base, term)
 

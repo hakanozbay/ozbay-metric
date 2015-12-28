@@ -31,10 +31,10 @@ pcicadlyil, piccadilly = 2.0
 
 ## Python implementation
 
-There is a ``` metricRunner.py ``` in the 'python/src' folder of the repository. You can supply 2 words as 2 arguments to the file when executing, for it to then calcualte a result and print it out. Here is an example to illustrate:
+There is a ``` ozbayMetricRunner.py ``` in the 'python/src' folder of the repository. You can supply 2 words as 2 arguments to the file when executing, for it to then calcualte a result and print it out. Here is an example to illustrate:
 
 ```
-$ python3 metricRunner.py ban bat
+$ python3 ozbayMetricRunner.py ban bat
 The result of comparing ban with bat is: 0.75
 ```
 
