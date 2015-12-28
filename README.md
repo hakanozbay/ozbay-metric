@@ -33,35 +33,49 @@ pcicadlyil, piccadilly = 2.0
 
 ### Executing the implemetation and tests
 
-There is a ``` ozbayMetricRunner.py ``` in the 'python/src' folder of the repository. You can supply 2 words as 2 arguments to the file when executing, for it to then calcualte a result and print it out. Here is an example to illustrate:
+There is a ``` ozbayMetricRunner.py ``` in the "python/src" folder of the repository. You can supply 2 words as 2 arguments to the file when executing, for it to then calcualte a result and print it out. Here is an example to illustrate:
 
-```
+```bash
 $ python3 ozbayMetricRunner.py ban bat
 The result of comparing ban with bat is: 0.75
 ```
 
 To execute the tests in the Python implementation you need to run the "allTests.py" file in the 'python' folder.
-Before you execute this, you must set the PYTHONPATH to inclue the src folder, like so:
+Before you execute this, you must set the ``` PYTHONPATH ``` to inclue the src folder, like so:
 
-``` export PYTHONPATH=src ```
+```bash
+export PYTHONPATH=src
+```
 
 To then execute the file:
 
-``` python3 allTests.py ```
+```bash
+$ python3 allTests.py
+```
 
 ### Using the library in your code
 
 If you want to use the calculator in your source code as a library, in your source code file you need to import the calculator and utilize it declaring it in 2 possible ways:
 
-``` import ozbayMetricCalculator ```
+```python
+import ozbayMetricCalculator
+```
 
-You can then utilize it by calling ``` result = ozbayMetricCalculator.calculate(word1,word2) ```
+You can then utilize it by calling 
+```python
+result = ozbayMetricCalculator.calculate(word1,word2)
+```
 
 Or alternatively:
 
-``` from ozbayMetricCalculator import calculate ```
+```python
+from ozbayMetricCalculator import calculate 
+```
 
-You can then utilize it by calling ``` result = calculate(word1,word2) ```
+You can then utilize it by calling 
+```python
+result = calculate(word1,word2)
+```
 
 ## Java implementation
 
@@ -73,14 +87,14 @@ There is a ``` OzbayMetricRunner.java ``` in the 'java/src/main/java/com/hakanoz
 
 If you are running the implementation on the command line, without an IDE like Eclipse, you will need to package and compile the project using Maven first, like so:
 
-```
+```bash
 $ cd java
 $ mvn clean package
 ```
 
 Afterwards navigate to the built jar pacakage, and supply 2 words as 2 arguments to the file when executing, for it to then calcualte a result and print it out. Here is an example to illustrate:
 
-```
+```bash
 $ cd target
 $ java -cp ozbay-metric-1.0.0.jar com.hakanozbay.app.OzbayMetricRunner ban bat
 The result of comparing ban with bat is: 0.75
@@ -88,7 +102,7 @@ The result of comparing ban with bat is: 0.75
 
 To execute the tests in the you can provide run the maven test goal, running the "UnitTestSuite" like so:
 
-```
+```bash
 $ mvn test -Dtest=UnitTestSuite
 ```
 
@@ -96,13 +110,13 @@ $ mvn test -Dtest=UnitTestSuite
 
 If you want to use the calculator in your source code as a library, assuming you use Maven for you project, you will first need to install the library to your local Maven repository by running the maven install command. You can do this by nagivating to the top level 'java' folder and executing the command:
 
-```
+```bash
 $ mvn clean install
 ```
 
 Afterwards, in your pom.xml file, declare the library as a dependency:
 
-```
+```xml
 <dependency>
 	<groupId>com.hakanozbay</groupId>
 	<artifactId>ozbay-metric</artifactId>
@@ -112,9 +126,14 @@ Afterwards, in your pom.xml file, declare the library as a dependency:
 
 In your source code, you must import the ``` OzbayMetricCalculator ``` declaring it as:
 
-``` import com.hakanozbay.metric.OzbayMetricCalculator ```
+```java
+import com.hakanozbay.metric.OzbayMetricCalculator 
+```
 
-You can then utilize it by calling ``` double result = new OzbayMetricCalculator().calculate(word1,word2) ```
+You can then utilize it by calling 
+```java
+double result = new OzbayMetricCalculator().calculate(word1,word2)
+```
 
 
 [Jaccard Distance]: https://en.wikipedia.org/wiki/Jaccard_index
