@@ -11,11 +11,11 @@ The formula produces an output value is which is >= 0.0 where 0.0 is a perfect m
 |ban|bane|0.3333333|
 |ban|band|0.3333333|
 |ban|bat|0.75|  
-|ban|bands|1.3333333333333335|
+|ban|bands|1.3333333|
 |ban|banana|2.0|
-|ban|bandana|2.3333333333333335|
+|ban|bandana|2.3333333|
 |ban|bandit|3.0|
-|ban|bandage|4.666666666666667|
+|ban|bandage|4.6666666|
 
 
 This metric accommodates for words that are incorrectly spelt:
@@ -28,7 +28,7 @@ This metric accommodates for words that are incorrectly spelt:
 |piccadilly|piccadlily|0.3333333|
 |piccadilly|picacdilly|0.4|
 |piccadilly|picadily|0.5|
-|piccadilly|picacdlily|1.3333333333333335|
+|piccadilly|picacdlily|1.3333333|
 |piccadilly|ipcacdily|1.48148|
 |piccadilly|pcicadlyil|2.0|
 
