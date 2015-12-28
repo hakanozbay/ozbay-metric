@@ -110,7 +110,7 @@ To execute the tests in the you can provide run the maven test goal, running the
 $ mvn test -Dtest=UnitTestSuite
 ```
 
-## Using the library in your code
+### Using the library in your code
 
 If you want to use the calculator in your source code as a library, assuming you use Maven for you project, you will first need to install the library to your local Maven repository by running the maven install command. You can do this by nagivating to the top level 'java' folder and executing the command:
 
