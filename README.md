@@ -82,7 +82,7 @@ Afterwards navigate to the built jar pacakage, and supply 2 words as 2 arguments
 
 ```
 $ cd target
-$ java ozbay-metric-1.0.0.jar ban bat
+$ java -cp ozbay-metric-1.0.0.jar com.hakanozbay.app.OzbayMetricRunner ban bat
 The result of comparing ban with bat is: 0.75
 ```
 
