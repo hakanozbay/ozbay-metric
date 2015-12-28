@@ -70,17 +70,27 @@ You must have JDK 1.8 and Maven 3+ installed on your machine in order to run, co
 There is a ``` OzbayMetricRunner.java ``` in the 'java/src/main/java/com/hakanozbay/app' folder of the repository. 
 
 ### Executing the implemetation and tests
- 
-If you are running this on the command line, without an IDE like Eclipse, you will need to package and compile the project using Maven first, like so:
+
+If you are running the implementation on the command line, without an IDE like Eclipse, you will need to package and compile the project using Maven first, like so:
 
 ```
 $ cd java
 $ mvn clean package
 ```
 
+Afterwards navigate to the built jar pacakage, and supply 2 words as 2 arguments to the file when executing, for it to then calcualte a result and print it out. Here is an example to illustrate:
 
+```
+$ cd target
+$ java ozbay-metric-1.0.0.jar ban bat
+The result of comparing ban with bat is: 0.75
+```
 
-To execute the tests in the Java implementation you need to run the "UnitTestSuite.java" JUnit test in the 'src/test/java/com/hakanozbay/testsuite' folder.
+To execute the tests in the you can provide run the maven test goal, running the "UnitTestSuite" like so:
+
+```
+$ mvn test -Dtest=UnitTestSuite
+```
 
 [Jaccard Distance]: https://en.wikipedia.org/wiki/Jaccard_index
 [Edit Distance]: https://en.wikipedia.org/wiki/Edit_distance
