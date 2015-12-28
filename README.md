@@ -92,6 +92,31 @@ To execute the tests in the you can provide run the maven test goal, running the
 $ mvn test -Dtest=UnitTestSuite
 ```
 
+## Using the library in your code
+
+If you want to use the calculator in your source code as a library, assuming you use Maven for you project, you will first need to install the library to your local Maven repository by running the maven install command. You can do this by nagivating to the top level 'java' folder and executing the command:
+
+```
+$ mvn clean install
+```
+
+Afterwards, in your pom.xml file, declare the library as a dependency:
+
+```
+<dependency>
+	<groupId>com.hakanozbay</groupId>
+	<artifactId>ozbay-metric</artifactId>
+	<version>1.0.0</version>
+</dependency>
+```
+
+In your source code, you must import the ``` OzbayMetricCalculator ``` declaring it as:
+
+``` import com.hakanozbay.metric.OzbayMetricCalculator ```
+
+You can then utilize it by calling ``` double result = new OzbayMetricCalculator().calculate(word1,word2) ```
+
+
 [Jaccard Distance]: https://en.wikipedia.org/wiki/Jaccard_index
 [Edit Distance]: https://en.wikipedia.org/wiki/Edit_distance
 [Longest Common Substring Distance]: https://en.wikipedia.org/wiki/Longest_common_substring_problem 
